@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const value1 = parseInt("1");//string di konversi ke int
+        const value2 = 1;
+        const sum = value1 + value2; // hasilnya jadi 11 karena string + string
+
+        document.writeln(`${sum}`)
+
+        document.writeln(`<p>${parseInt("1.1")}</p>`) //hasilnya 1 karena di konversi ke bilangan bulat
+        document.writeln(`<p>${parseFloat("1.1")}</p>`) // float bisa koma
+        document.writeln(`<p>${Number("1.1")}</p>`) //fleksibel
+
+        const a = 1;
+        const b = 1;
+        const total = a.toString()+b.toString();// 1 nya jadi string 
+
+        document.writeln(`${total}`)
+
+        //NAN (not a number)
+        document.writeln(`<p>${parseInt("salah")}</p>`)
+        document.writeln(`<p>${parseFloat("1.1salah")}</p>`) // js pinter kalo depan ada angka tpi belakang bukan , yg belakng di ignore
+
+    document.writeln(`<p>${Number("1salah")}</p>`)// kalo ada satu huruf aja bakal nan
+    document.writeln(`<p>${Number("1.1salah")}</p>`)// kalo ada satu huruf aja bakal nan
+
+    const first = Number("7j");
+    const totalNumber = first + 100;
+    document.writeln(`<p>${totalNumber}</p>`)
+
+
+     document.writeln(`<p>${isNaN(first)}</p>`);
+
+    </script>
+</body>
+</html>
