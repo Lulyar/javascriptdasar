@@ -8,10 +8,27 @@
 <body>
     <script>
 
-        let arrayKosong = [];
+        let arrayKosong = [];  //operasi array cari di word
 
         let arrayNama = ["Luly","Angga", "Ramadhan"]
         
+
+        const names = []; // [] tanda array nah kan kosong makanya push 
+        names.push("luly");
+        names.push("angga","ramadhan");
+        names.push("budi","joko")
+
+            console.table(names);
+
+        names[0] ="budi";// ngubah index 0 jadi isinya bakal budi
+        names[1] ="tes";// ngubah index 0 jadi isinya bakal budi
+
+        console.table(names);
+        delete names [3]; // nge hapus index yang di dalem array
+
+            names.push ("nambahin")
+            console.log(names.length) //nunjukin jumlah array/ panjang array
+
 
     </script>
 </body>
